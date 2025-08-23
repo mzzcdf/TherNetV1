@@ -14,7 +14,7 @@ from mmcv.runner import (get_dist_info, init_dist, load_checkpoint,
 from mmcv.utils import DictAction
 
 import sys
-sys.path.append("/home4/ssh/mmsegmentation-master/")
+sys.path.append("TherNetV1/")
 from mmseg import digit_version
 from mmseg.apis import multi_gpu_test, single_gpu_test
 from mmseg.datasets import build_dataloader, build_dataset
@@ -25,8 +25,8 @@ from mmseg.utils import build_ddp, build_dp, get_device, setup_multi_processes
 def parse_args():
     parser = argparse.ArgumentParser(
         description='mmseg test (and eval) a model')
-    parser.add_argument('--config', help='test config file path', default="/home4/ssh/mmsegmentation-master/local_config/Segformer/TherNetV1.b5.512x512.TIC.160k.py")
-    parser.add_argument('--checkpoint', help='checkpoint file',  default="/home4/ssh/result/CJZ_results/SSH_TIC_512_160k/iter_16000.pth")
+    parser.add_argument('--config', help='test config file path', default="TherNetV1/local_config/TherNetV1/TherNetV1.b5.480x480.TIC.160k.py")
+    parser.add_argument('--checkpoint', help='checkpoint file',  default="TherNetV1/result/results/TherNetV1_TIC_480_160k/iter_160000.pth")
     parser.add_argument(
         '--work-dir',
         help=('if specified, the evaluation metric results will be dumped'

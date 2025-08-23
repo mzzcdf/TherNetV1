@@ -15,7 +15,7 @@ from mmcv.utils import Config, DictAction, get_git_hash
 
 
 import sys
-sys.path.append("/home4/ssh/mmsegmentation-master/")
+sys.path.append("TherNetV1/")
 from mmseg import __version__
 from mmseg.apis import init_random_seed, set_random_seed, train_segmentor
 from mmseg.datasets import build_dataset
@@ -26,13 +26,12 @@ import pdb
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
-    parser.add_argument('--config', default="/home4/ssh/mmsegmentation-master/local_config/Segformer/TherNetV1.b5.512x512.TIC.160k.py", help='train config file path')
-    parser.add_argument('--work-dir', default="/home4/ssh/result/CJZ_results/SSH_TIC_512_160k/", help='the dir to save logs and models')
+    parser.add_argument('--config', default="TherNetV1/local_config/TherNetV1/TherNetV1.b5.480x480.TIC.160k.py", help='train config file path')
+    parser.add_argument('--work-dir', default="TherNetV1/results/TherNetV1_TIC_480_160k/", help='the dir to save logs and models')
     parser.add_argument(
         '--load-from', help='the checkpoint file to load weights from')
-     #default="/home4/ssh/vit_base_p16_384_20220308-96dfe169.pth", 
     parser.add_argument(
-        '--resume-from', help='the checkpoint file to resume from', default = None)#"/home3/ssh/vit_soda_480_80k/iter_48000.pth")#, default = "/home3/ssh/vit_TIC_480_160k/iter_32000.pth")
+        '--resume-from', help='the checkpoint file to resume from', default = None)
     parser.add_argument(
         '--no-validate',
         action='store_true',
