@@ -1,12 +1,12 @@
 
 # TherNet: Thermal Segmentation Network Harnessing Physical Properties
 
-## News
-- **[23/8/2024]** The code of TherNetV1 has been all released, TI-Cityscapes is coming soon!!
-- **[9/8/2025]** TherNet: Thermal Segmentation Network Harnessing Physical Properties has been accepted by TPAMI2025!!!
+## 🔥 News
+- **[23/8/2024]** 🎁 The code of TherNetV1 has been all released, TI-Cityscapes is coming soon!!
+- **[9/8/2025]** 🔥 TherNet: Thermal Segmentation Network Harnessing Physical Properties has been accepted by TPAMI2025!!!
 
 
-## Installation
+## 🌏️ Installation
 
 This project is built upon the [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) framework. We sincerely thank the OpenMMLab team for their remarkable work.
 
@@ -36,7 +36,7 @@ If you wish to integrate our methods into a newer version of `mmsegmentation`, y
     pip install -r requirements.txt
     ```
 
-## Running
+## 🥁 Running
 
 This section will guide you on how to train the **TherNetV1** model using this repository.
 
@@ -87,19 +87,19 @@ We have set the configuration file above as the default in the tools/test.py scr
 python tools/test.py
 ```
 
-## Dataset
+## 🏛︎ Dataset
 
 
-## Visual Comparisons
+## ✴️ Visual Comparisons
 
 
 
 
-## Data Available
+## 🧑‍🤝‍🧑 Data Available
 #### 
 #### 
 
-## Citation
+## 📝 Citation
 ```
 
 ```
