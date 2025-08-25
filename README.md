@@ -59,7 +59,7 @@ The relevant core code can be found at:
 We provide a ready-to-use configuration file to help you get started easily.
 
 **Step 1: Prepare the Dataset**
-Please download the TI-Cityscapes dataset and organize your directory structure according to the format defined in `main/mmseg/dataset/TIC.py`.
+Please download the TI-Cityscapes dataset(coming soon!) and organize your directory structure according to the format defined in `main/mmseg/dataset/TIC.py`.
 
 **Step 2: Modify Paths in the Config File**
 This is a critical step. Locate our example configuration file:
@@ -79,18 +79,12 @@ We have set the configuration file above as the default in the tools/train.py sc
 python tools/train.py
 ```
 
-## Running
+### 3. Evaluate Your Model (Example on TI-Cityscapes)
 
-To run the optimizer, simply use
+We have set the configuration file above as the default in the tools/test.py script. Therefore, you can start training by simply running the following command in your terminal:
 
-```shell
-python 
-```
-
-
-## Evaluation
-```shell
-python 
+```bash
+python tools/test.py
 ```
 
 ## Dataset
